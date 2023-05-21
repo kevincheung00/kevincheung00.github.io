@@ -24,7 +24,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="nav__btns">
-                    <div class="nav_toggle" id="nav-toggle">
+                    <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
@@ -72,15 +72,15 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
+                            <a href="mailto: kevin.cheung.sh@gmail.com" target="_blank" class="home__social-icon">
+                                <i class="uil uil-envelope-alt"></i>
+                            </a>
+                            
                             <a href="https://www.linkedin.com/in/kevin-sh-cheung/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
 
-                            <a href="" class="home__social-icon">
-                                <i class="uil uil-dribbble"></i>
-                            </a>
-
-                            <a href="https://github.com/kevincheung00" class="home__social-icon">
+                            <a href="https://github.com/kevincheung00" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
@@ -329,11 +329,36 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Kevin Cheung</h1>
+                        <span class="footer__subtitle">Consultant</span>
+                    </div>
+
+                    <div class="footer__socials">
+                        <a href="mailto: kevin.cheung.sh@gmail.com" target="_blank" class="footer__social">
+                            <i class="uil uil-envelope-alt"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/kevin-sh-cheung/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/kevincheung00" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">Made with &#60;3 by Kevin Cheung</p>
+            </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
