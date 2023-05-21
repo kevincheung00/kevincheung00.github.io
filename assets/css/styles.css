@@ -641,7 +641,6 @@ img {
   
 }
 
-/* For large devices */
 @media screen and (min-width: 768px) {
   .container{
     margin-left: auto;
@@ -696,7 +695,93 @@ img {
   .home__content{
     padding-top: 5.5rem;
     column-gap: 2rem;
-
+  }
+  .home__blob{
+    width: 270px;
+  }
+  .home__scroll{
+    display: block;
   }
 
+  .home__scroll-button{
+    margin-left: 3rem;
+  }
+
+  .about__container{
+    column-gap: 5rem;
+  }
+
+  .about__img{
+    width: 350px;
+  }
+  .about__description{
+    text-align: initial;
+  }
+
+  .about__info{
+    justify-content: space-between;
+  }
+
+  .about__buttons{
+    justify-content: initial;
+  }
+
+  .qualification__tabs{
+    justify-content: center;
+  }
+  .qualification__button{
+    margin: 0 var(--mb-1);
+  }
+  .qualification__sections{
+    grid-template-columns: 0.5fr;
+  }
+
+  /* GOING TO NEED FOR SCHOOL PART */
+  .services__container{
+    grid-template-columns: repeat(3, 218px);
+    justify-content: center;
+  }
+  .services__icon{
+    font-size: 2rem;
+  }
+  .services__content{
+    padding: 6rem 0 2rem 2.5rem;
+  }
+  .services__modal-content{
+    width: 450px;
+  }
+
+.footer__bg{
+  padding: 3rem 0 3.5rem;
+}
+
+.footer__links {
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.footer__socials{
+  justify-self: flex-end;
+}
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer__container {
+    padding: 0;
+  }
+
+  .home__blob{
+    width: 320px;
+  }
+  .home__social{
+    transform: translateX(-6rem);
+  }
+  
+  /* WILL NEED */
+  .services__container{
+    grid-template-columns: repeat(3, 238px);
+  }
 }
