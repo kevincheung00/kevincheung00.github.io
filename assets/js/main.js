@@ -30,32 +30,29 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
 
+/*==================== education MODAL ====================*/
+const modalViews = document.querySelectorAll('.education__modal'),
+      modalBtns = document.querySelectorAll('.education__button'),
+      modalCloses = document.querySelectorAll('.education__modal-close')
 
-/*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]'),
-  tabContents = document.querySelectorAll('[data-content]')
+let modal = function(modalClick) {
+  modalViews[modalClick].classList.add('active-modal')
+}
 
-tabs.forEach(tab =>{
-  tab.addEventListener('click', () =>{
-    const target = document.querySelector(tab.dataset.target)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('qualification__active')
-    })
-    target.classList.add('qualification__active')
-
-    tabs.forEach(tab =>{
-      tab.classList.remove('qualification__active')
-    })
-    tab.classList.add('qualification__active')
-
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener('click', () => {
+    modal(i)
   })
 })
 
-/*==================== SERVICES MODAL ====================*/
-
-
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal')
+    })
+  })
+})
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 
