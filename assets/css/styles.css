@@ -579,15 +579,6 @@ img {
 }
 
 
-/*==================== PORTFOLIO ====================*/
-
-
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
 /*==================== CONTACT ME ====================*/
 
 
@@ -636,7 +627,7 @@ img {
 .footer__copy{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: lightgrey;
   margin-top: var(--mb-3);
 }
 
