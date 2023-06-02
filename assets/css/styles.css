@@ -352,6 +352,25 @@ img {
   font-size: 1.25rem;
 }
 
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
@@ -506,8 +525,19 @@ img {
 
 .education__title{
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-25);
   font-weight: var(--font-medium);
+}
+
+.education__subtitle{
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-medium);
+}
+
+.education__years{
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
 }
 
 .education__button{
@@ -880,6 +910,9 @@ img {
 
   .about__buttons{
     justify-content: initial;
+    margin: 0 auto;
+    display: block;
+    
   }
 
 
@@ -925,7 +958,6 @@ img {
     transform: translateX(-6rem);
   }
   
-  /* WILL NEED */
   .education__container{
     grid-template-columns: repeat(2, 350px);
   }
