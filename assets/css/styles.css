@@ -468,7 +468,7 @@ img {
 .work__subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
 }
 
 .work__calendar{
@@ -503,18 +503,29 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.education__content{
-  position: relative;
-  background-color: var(--container-color);
-  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
-}
-
 .education__content:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+.education__card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card__img {
+  border-radius: 5px 5px 0 0;
+}
+
+.education__content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 0.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: 0.3s;
+}
+
 
 .education__icon{
   display: block;
@@ -537,7 +548,7 @@ img {
 .education__years{
   font-size: var(--h4-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-1);
+  /* margin-bottom: var(--mb-1); */
 }
 
 .education__button{
@@ -580,6 +591,10 @@ img {
 
 .education__modal-service{
   display: flex;
+}
+
+.education__modal-bullets {
+  margin-left: 45px;
 }
 
 .education__modal-title{
@@ -919,9 +934,9 @@ img {
   .education__icon{
     font-size: 2rem;
   }
-  .education__content{
-    padding: 6rem 0 2rem 2.5rem;
-  }
+  /* .education__content{
+    padding: 3.5rem 0 2rem 2.5rem;
+  } */
   .education__modal-content{
     width: 600px;
   }
