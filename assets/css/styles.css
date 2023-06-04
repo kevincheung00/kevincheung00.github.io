@@ -664,17 +664,16 @@ img {
 }
 
 .footer__container{
-  row-gap: 3.5rem;
+  row-gap: 1rem;
 }
 
 .footer__bg{
   background-color: var(--first-color-second);
-  padding: 2rem 0 3rem;
+  padding: 2rem 0 2rem;
 }
 
 .footer__title{
   font-size: var(--h1-font-size);
-  margin-bottom: var(--mb-0-25);
 }
 
 .footer__subtitle{
@@ -704,7 +703,7 @@ img {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: lightgrey;
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-2);
 }
 
 .footer__title,
@@ -782,7 +781,6 @@ img {
     gap: 0.5rem;
   }
 
-  /* GOING TO NEED FOR EDUCATION */
   .education__container{
     grid-template-columns: max-content;
     justify-content: center;
@@ -915,7 +913,6 @@ img {
     
   }
 
-
   .education__container{
     justify-content: center;
   }
@@ -929,18 +926,14 @@ img {
     width: 600px;
   }
 
-.footer__bg{
-  padding: 3rem 0 3.5rem;
-}
+  .footer__links {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
 
-.footer__links {
-  flex-direction: row;
-  column-gap: 2rem;
-}
-
-.footer__socials{
-  justify-self: flex-end;
-}
+  .footer__socials{
+    justify-self: flex-end;
+  }
 }
 
 /* For large devices */
