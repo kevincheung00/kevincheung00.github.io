@@ -135,23 +135,6 @@
                     <div class="about__data">
                         <p class="about__description">I recently graduated from Western University, where I completed a dual degree in Business and Computer Science.
                             My experience spans across tech, consulting, and design. <br><br>My most recent experience is working at Konrad Group as an Associate Consulting Intern, where I will begin working full-time.</p>
-                            <!-- <div class="about__info">
-                                <div>
-                                    <span class="about__info-title">08+</span>
-                                    <span class="about__info-name">Years <br> experience</span>
-                                </div>
-
-                                <div>
-                                    <span class="about__info-title">20+</span>
-                                    <span class="about__info-name">Completed <br> projects</span>
-                                </div>
-
-                                <div>
-                                    <span class="about__info-title">05+</span>
-                                    <span class="about__info-name">Companies <br> worked</span>
-                                </div>
-                            </div> -->
-
                             <div class="about__buttons">
                                 <a href="https://drive.google.com/file/d/1pkCJpvXx1t-7LG2QgwKftqgXuY7T47kD/view?usp=sharing" target="_blank" class="button button--flex">
                                     View My Resume
@@ -351,6 +334,7 @@
                     <div class="work__sections">
                         <!--==================== WORK ====================-->
                         <div class="work__content" data-content id="work">
+
                             <!--==================== ESDC ====================-->
                             <div class="work__data">
                                 <div>
@@ -434,58 +418,35 @@
 
                 <div class="contact__container container grid">
                     <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">999-777-666</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">kevin.cheung.sh@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">Toronto, ON, Canada</span>
-                            </div>
-                        </div>
+                        <img src="/assets/img/contact-vector.png">
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formsubmit.co/kevin.cheung.sh@gmail.com" class="contact__form grid" method="POST">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                    <label for="" class="contact__label">Name</label>
+                                    <input type="text" name="name" class="contact__input" required>
+                                </div>
+                                <div class="contact__content">
+                                    <label for="" class="contact__label">Email</label>
+                                    <input type="email" name="email" class="contact__input" required>
+                                </div>
                             </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
-                            </div>
+                            
                             <div class="contact__content">
                                 <label for="" class="contact__label">Subject</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="subject" class="contact__input" required>
                             </div>
-                        </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
-                        <div>
-                            <a href="#" class="button button--flex">
+                        <div class="submit__button">
+                            <button type="submit" class="button button--flex submit__button">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
 
                     </form>
@@ -500,7 +461,6 @@
                 <div class="footer__container container grid">
                     <div>
                         <h1 class="footer__title">Kevin Cheung</h1>
-                        <!-- <span class="footer__subtitle">Consultant</span> -->
                     </div>
 
                     <div class="footer__socials">
